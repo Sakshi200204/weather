@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <!-- Video Background Container -->
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Location Input Container -->
+    <div class="app-main">
+        <div class="searchInputBox">
+            <input type="text" id="input-box" class="input-box" placeholder="Enter Location..." autocomplete="off">
+        </div>
+
+        <!-- Display Weather Information Here -->
+        <div class="weather-body" style="display: none;">
+            <!-- Location Details -->
+            <div class="location-details">
+                <div class="city" id="city"><!-- Dynamic City, Country --></div>
+                <div class="date" id="date"><!-- Dynamic Date --></div>
+            </div>
+
+            <!-- Weather Status Container -->
+            <div class="weather-status">
+                <div class="temp" id="temp"><!-- Dynamic Temperature --></div>
+                <div class="min-max" id="min-max"><!-- Dynamic Min-Max Temperature --></div>
+                <div class="icon-name" id="weather-icon">
+                    <img src="">
+                    <div class="weather" id="weather"><!-- Dynamic Weather Condition --></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="app.js"></script>
+</body>
+</html>
+
